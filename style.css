@@ -1,6 +1,25 @@
-p{
-    color: red;
-    font-size: 14px;
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
-h1{color:blue}
-h2{color:blueviolet}
+
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: 2px solid blue;
+}
+
+
+@media screen and (max-width:500px)  {
+    .container{
+        flex-direction: column;
+    }
+    .child{
+        width: 100px;
+        height: 50px;
+background-color: blueviolet;
+    }
+}
